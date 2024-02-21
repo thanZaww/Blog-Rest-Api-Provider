@@ -1,3 +1,4 @@
+// ignore_for_file: public_member_api_docs, sort_constructors_first
 class GetOnePostResponse {
   int? id;
   String? title;
@@ -22,5 +23,10 @@ class GetOnePostResponse {
     data['body'] = body;
     data['photo'] = photo;
     return data;
+  }
+
+  @override
+  String toString() {
+    return 'GetOnePostResponse(id: $id, title: $title, body: $body, photo: $photo)';
   }
 }
